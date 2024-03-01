@@ -6,7 +6,7 @@ namespace Domain.Tests.Nitrox.Calculators;
 [TestClass]
 public class MaximumOperatingDepthCalculatorTests
 {
-    private MaximumOperatingDepthCalculator _calculator = null!;
+    private IMaximumOperatingDepthCalculator _calculator = null!;
 
     [TestInitialize]
     public void Setup()

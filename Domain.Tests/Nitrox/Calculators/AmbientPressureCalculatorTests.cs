@@ -6,7 +6,7 @@ namespace Domain.Tests.Nitrox.Calculators;
 [TestClass]
 public class AmbientPressureCalculatorTests
 {
-    private AmbientPressureCalculator _calculator = null!;
+    private IAmbientPressureCalculator _calculator = null!;
 
     [TestInitialize]
     public void SetUp()

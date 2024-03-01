@@ -8,7 +8,7 @@ namespace Domain.Tests.Nitrox.Calculators;
 public class BestNitroxForDepthCalculatorTests
 {
     private Mock<IAmbientPressureCalculator> _ambientPressureCalculatorMock = null!;
-    private BestNitroxForDepthCalculator _calculator = null!;
+    private IBestNitroxForDepthCalculator _calculator = null!;
 
     [TestInitialize]
     public void SetUp()

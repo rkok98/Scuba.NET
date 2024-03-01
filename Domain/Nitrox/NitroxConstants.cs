@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using Domain.Nitrox.Models;
 using UnitsNet;
 
@@ -6,6 +7,7 @@ namespace Domain.Nitrox;
 /// <summary>
 ///     Provides a set of constants relevant to scuba diving calculations, particularly for nitrox diving.
 /// </summary>
+[ExcludeFromCodeCoverage]
 public abstract class NitroxConstants
 {
     // The atmospheric pressure at sea level in atmospheres.
