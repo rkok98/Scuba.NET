@@ -1,6 +1,6 @@
 using UnitsNet;
 
-namespace Domain.Nitrox.Services;
+namespace Domain.Nitrox.Calculators;
 
 /// <summary>
 ///     This class is responsible for calculating the partial pressure of a gas component within a gas mixture at a given

@@ -1,7 +1,7 @@
-using Domain.Nitrox.Services;
+using Domain.Nitrox.Calculators;
 using UnitsNet;
 
-namespace Domain.Tests.Nitrox;
+namespace Domain.Tests.Nitrox.Calculators;
 
 [TestClass]
 public class AmbientPressureCalculatorTests
@@ -18,8 +18,8 @@ public class AmbientPressureCalculatorTests
     public void CalculateAmbientPressure_ZeroDepth_ReturnsAtmosphericPressure()
     {
         // Arrange
-        var depth = Length.FromMeters(0);
-        var waterDensity = Density.FromKilogramsPerCubicMeter(1000); // Approx. density of freshwater
+        var depth = Depth.FromMeters(0);
+        var waterDensity = Density.FromKilogramsPerCubicMeter(1000);
 
         // Act
         var result = _calculator.CalculateAmbientPressure(depth, waterDensity);
@@ -33,7 +33,7 @@ public class AmbientPressureCalculatorTests
     public void CalculateAmbientPressure_NegativeDepth_ThrowsArgumentException()
     {
         // Arrange
-        var depth = Length.FromMeters(-1);
+        var depth = Depth.FromMeters(-1);
         var waterDensity = Density.FromKilogramsPerCubicMeter(1000);
 
         // Act & Assert
@@ -45,7 +45,7 @@ public class AmbientPressureCalculatorTests
     public void CalculateAmbientPressure_NegativeDensity_ThrowsArgumentException()
     {
         // Arrange
-        var depth = Length.FromMeters(10);
+        var depth = Depth.FromMeters(10);
         var waterDensity = Density.FromKilogramsPerCubicMeter(-1000);
 
         // Act & Assert

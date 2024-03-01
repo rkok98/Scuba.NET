@@ -1,8 +1,6 @@
 using UnitsNet;
 
-namespace Domain.Nitrox.Services;
-
-using Depth = Length;
+namespace Domain.Nitrox.Calculators;
 
 /// <summary>
 ///     This class is responsible for calculating the ambient pressure experienced at a given depth underwater.

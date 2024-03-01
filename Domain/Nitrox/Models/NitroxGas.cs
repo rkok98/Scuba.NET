@@ -68,7 +68,7 @@ public readonly record struct NitroxGas
     /// <summary>
     ///     Gets the Enriched Air Nitrox (EAN) label of the gas mixture.
     /// </summary>
-    public string Ean => "EAN" + Math.Floor(OxygenPercentage);
+    public string Ean => Math.Floor(OxygenPercentage) > 100 ? "EAN" + Math.Floor(OxygenPercentage) : "O2";
 
     /// <summary>
     ///     Returns a string representation of the Nitrox gas mixture in the EAN format.

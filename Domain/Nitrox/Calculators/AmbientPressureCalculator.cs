@@ -1,9 +1,7 @@
 using UnitsNet;
 using UnitsNet.Units;
 
-namespace Domain.Nitrox.Services;
-
-using Depth = Length;
+namespace Domain.Nitrox.Calculators;
 
 public class AmbientPressureCalculator : IAmbientPressureCalculator
 {

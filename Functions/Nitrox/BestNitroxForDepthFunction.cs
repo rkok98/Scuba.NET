@@ -1,6 +1,6 @@
 using System.Globalization;
 using Domain.Nitrox;
-using Domain.Nitrox.Services;
+using Domain.Nitrox.Calculators;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;
@@ -8,7 +8,7 @@ using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.Extensions.Logging;
 using UnitsNet;
 
-namespace Functions;
+namespace Functions.Nitrox;
 
 public class BestNitroxForDepthFunction
 {

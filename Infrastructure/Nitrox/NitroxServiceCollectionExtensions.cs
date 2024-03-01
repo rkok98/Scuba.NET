@@ -1,4 +1,4 @@
-using Domain.Nitrox.Services;
+using Domain.Nitrox.Calculators;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Infrastructure.Nitrox;

@@ -1,9 +1,7 @@
 using Domain.Nitrox.Models;
 using UnitsNet;
 
-namespace Domain.Nitrox.Services;
-
-using Depth = Length;
+namespace Domain.Nitrox.Calculators;
 
 /// <summary>
 ///     Provides functionality to calculate the best nitrox mix for a given depth based on a desired partial pressure of
