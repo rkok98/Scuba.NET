@@ -49,7 +49,7 @@ public class BestNitroxForDepthCalculatorTests
         // Act
         var result = _calculator.CalculateBestNitroxForDepth(depth, partialPressureOfOxygen, waterDensity);
 
-        // Assert is handled by the ExpectedException attribute
+        // Assert is handled by the ExpectedExceptionWithMessage attribute
     }
 
     [TestMethod]
@@ -64,7 +64,7 @@ public class BestNitroxForDepthCalculatorTests
         // Act
         _calculator.CalculateBestNitroxForDepth(depth, partialPressureOfOxygen, waterDensity);
 
-        // Assert is handled by the ExpectedException attribute
+        // Assert is handled by the ExpectedExceptionWithMessage attribute
     }
 
     [TestMethod]
@@ -79,7 +79,7 @@ public class BestNitroxForDepthCalculatorTests
         // Act
         _calculator.CalculateBestNitroxForDepth(depth, partialPressureOfOxygen, waterDensity);
 
-        // Assert is handled by the ExpectedException attribute
+        // Assert is handled by the ExpectedExceptionWithMessage attribute
     }
 
     [TestMethod]

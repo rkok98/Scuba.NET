@@ -15,8 +15,8 @@ public class AmbientPressureCalculator : IAmbientPressureCalculator
         if (depth < Depth.Zero)
             throw new ArgumentException("Depth must be non-negative.", nameof(depth));
 
-        if (waterDensity < Density.Zero)
-            throw new ArgumentException("Water density must be non-negative.", nameof(waterDensity));
+        if (waterDensity <= Density.Zero)
+            throw new ArgumentException("Water density must be larger then zero.", nameof(waterDensity));
 
         return AtmosphericPressure + CalculateWaterPressure(depth, waterDensity);
     }

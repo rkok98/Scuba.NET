@@ -39,7 +39,7 @@ public class MaximumOperatingDepthCalculatorTests
         // Act
         _calculator.CalculateMaximumOperatingDepth(partialPressureO2, fractionOfO2);
 
-        // Assert is handled by ExpectedException
+        // Assert is handled by ExpectedExceptionWithMessage
     }
 
     [TestMethod]
@@ -53,7 +53,7 @@ public class MaximumOperatingDepthCalculatorTests
         // Act
         _calculator.CalculateMaximumOperatingDepth(partialPressureO2, fractionOfO2);
 
-        // Assert is handled by ExpectedException
+        // Assert is handled by ExpectedExceptionWithMessage
     }
 
     [TestMethod]
